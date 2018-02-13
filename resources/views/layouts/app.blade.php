@@ -29,14 +29,14 @@
 
     <div class="row">
         <div class="col-md-8 col-lg-8">
-            <!-- display errorrs here -->
+            <!-- display errors here -->
             @include('inc.messages')
             @yield('content')
         </div>
 
         <div class="col-md-4 col-lg-4">
-        <!-- include sidebar -->
-        @include('inc.sidebar')
+            <!-- include sidebar -->
+            @include('inc.sidebar')
         </div>
     </div>
 
