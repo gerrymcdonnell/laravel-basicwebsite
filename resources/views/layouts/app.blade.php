@@ -7,12 +7,16 @@
 
         <title>Laravel first app</title>
 
+        <!-- add app css file (auto looks in public folder) -->
+        <link rel="stylesheet" href="/css/app.css">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <!-- Styles -->
     </head>
 
     <body>
+    @include('inc.navbar')
         <!-- content goes here -->
         @yield('content')
 
