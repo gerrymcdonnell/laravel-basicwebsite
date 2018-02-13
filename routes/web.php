@@ -11,6 +11,7 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('home');
 });
@@ -26,6 +27,14 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+*/
+
+//use pages controller
+Route::get('/','PagesController@getHome');
+Route::get('/home','PagesController@getHome');
+Route::get('/about','PagesController@getAbout');
+Route::get('/contact','PagesController@getContact');
+
 
 Route::get('/messages','MessagesController@getMessages');
 
