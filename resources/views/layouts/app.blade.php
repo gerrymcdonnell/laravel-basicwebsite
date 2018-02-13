@@ -19,6 +19,9 @@
     @include('inc.navbar')
         <!-- content goes here -->
 
+<div class="container">
+
+    <div class="row">
         <div class="col-md-8 col-lg-8">
             @yield('content')
         </div>
@@ -27,7 +30,9 @@
         <!-- include sidebar -->
         @include('inc.sidebar')
         </div>
-        
+    </div>
+
+</div>
     </body>
 
 </html>
