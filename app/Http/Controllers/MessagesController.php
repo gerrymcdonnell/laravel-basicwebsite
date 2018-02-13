@@ -29,4 +29,11 @@ class MessagesController extends Controller
         //flash message
         return redirect('/home')->with('success','Message Sent');
     }
+
+    //get all the messages from the db
+    public function getMessages(){
+        $messages=Message::all();
+
+        return view('messages')->with('messages',$messages);
+    }
 }
